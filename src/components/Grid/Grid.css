@@ -1,0 +1,10 @@
+.grid {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: cadetblue;
+
+    div {
+        width: 200px;
+        height: 200px;
+    }
+}

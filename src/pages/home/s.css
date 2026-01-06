@@ -1,0 +1,10 @@
+#home {
+    display: flex;
+    justify-content: center;
+    height: "80dvh";
+    align-items: "center";
+
+    div {
+        width: 40vw;
+    }
+}
