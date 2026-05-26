@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import { NavBar } from "../../components/Navbar/Navbar";
-import { AnimatedBg } from "../../components/Background/AnimatedBg";
+import { AnimatedBg_1 } from "../../components/Background/bg1/AnimatedBg1";
 
 import toothlessDancing from "../../assets/toothless-dancing.gif";
 
@@ -21,7 +21,7 @@ export function NotFound() {
   return (
     <>
       <NavBar />
-      <AnimatedBg />
+      <AnimatedBg_1 />
       <section style={{ height: "100%", alignContent: "center" }}>
         <h1>404 Not found {count > 1 ? "x" + count : ""}</h1>
         {newDragonsito}

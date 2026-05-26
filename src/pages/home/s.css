@@ -1,10 +1,97 @@
 #home {
     display: flex;
-    justify-content: center;
-    height: "80dvh";
-    align-items: "center";
+    flex-direction: column;
+    height: 90dvh;
 
-    div {
-        width: 40vw;
+
+    .intro {
+        width: fit-content;
+        position: absolute;
+        top: 47dvh;
+        margin-left: 2rem;
+    }
+
+    nav {
+        a {
+            all: unset;
+            margin-top: 1.5rem;
+            font-size: large;
+        }
+
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+
+        p {
+            width: fit-content;
+        }
+    }
+
+    .img-box {
+        position: absolute;
+        top: 30dvh;
+        right: 20dvw;
+    }
+
+
+
+    #wanderingToothless {
+        position: absolute;
+        bottom: 9dvh;
+        animation-name: WanderingToothless;
+        animation-duration: 12s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+}
+
+#title {
+    font-size: 15dvh;
+    position: absolute;
+    top: 30dvh;
+    left: 1.5rem;
+}
+
+.section {
+    background-color: #242424;
+    height: 240px;
+    min-height: 240px;
+}
+
+#wanderingMeyotita {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 250px;
+    animation: Meyotita 9s linear infinite;
+}
+
+#gothick {
+    position: absolute;
+    top: 75%;
+    left: 20%;
+    height: 250px;
+    animation: Meyotita 9s linear infinite;
+}
+
+@keyframes WanderingToothless {
+    from {
+        left: -200px;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes Meyotita {
+    0% {
+        transform: scale(0) translateY(0) rotate(0);
+
+    }
+
+    100% {
+        transform: scale(1.3) translateY(-90px) rotate(360deg);
+
     }
 }

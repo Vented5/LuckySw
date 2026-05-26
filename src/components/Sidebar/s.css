@@ -3,16 +3,37 @@
     top: 0;
     width: 250px;
     height: 100%;
+    padding-top: 3.4rem;
     background-color: #242424;
+    transform: translateX(-110%);
+    transition: transform 300ms ease;
+    z-index: 1;
 
     ul {
         display: flex;
         flex-direction: column;
-        padding-left: 3rem;
+        padding-left: 2rem;
         list-style: none;
         gap: 15px;
         text-align: left;
+
+        li {
+            all: unset;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: fit-content;
+            gap: 8px;
+        }
+
+        a {
+            all: unset;
+        }
     }
+}
+
+#Sidebar.open {
+    transform: translateX(0);
 }
 
 .shadow {

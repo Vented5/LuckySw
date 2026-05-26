@@ -1,8 +1,9 @@
 .wrapper {
     position: absolute;
     overflow: hidden;
-    background: linear-gradient(90deg, rgb(2, 0, .6, 1), rgb(9, 9, 121, 1) 35%, rgb(0, 212, 255, 1) 100%);
-    height: 80dvh;
+    background: linear-gradient(0deg, rgb(2, 0, .6, 1), rgb(9, 9, 121, 1) 35%, rgb(0, 212, 255, 1) 100%);
+    /*height: calc(100dvh - 4rem);*/
+    height: 100%;
     width: 100dvw;
     z-index: -1;
 }

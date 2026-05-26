@@ -1,4 +1,13 @@
+html {
+  min-height: 100dvh;
+}
+
+body {
+  min-height: 100dvh;
+}
+
 #root {
+  min-height: 100dvh;
   margin: 0 auto;
   text-align: center;
   width: 100%;
@@ -17,6 +26,24 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scrollbar-width: none;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.hide-scrollbar {
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+
+  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
 }
 
 a {
@@ -50,7 +77,7 @@ h2 {
   margin: 0;
 }
 
-button {
+/*button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -60,7 +87,7 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
-}
+}*/
 
 button:hover {
   border-color: #646cff;

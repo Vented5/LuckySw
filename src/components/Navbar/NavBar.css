@@ -1,7 +1,37 @@
-#NavBar { 
+#NavBar {
     height: 4rem;
     display: flex;
     align-items: center;
     font-size: xx-large;
     justify-content: center;
+
+    button {
+        padding: 0%;
+        border-radius: 0px;
+        background-color: transparent;
+        position: fixed;
+        left: 1%;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-content: center;
+    }
+
+    a {
+        all: unset;
+        animation-name: fadeIn;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
 }

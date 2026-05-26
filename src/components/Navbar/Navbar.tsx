@@ -1,5 +1,19 @@
 import "./NavBar.css";
+import { useState } from 'react';
+import { Link } from "react-router-dom";
+import { Sidebar } from "../../components/Sidebar/Sidebar";
 
 export function NavBar() {
-  return <section id="NavBar" className="shadow">LuckySw</section>;
+
+    const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  return <>
+    <section id="NavBar" className="shadow">
+      <button onClick={() => setSidebarOpen(true)}>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#ffffff" viewBox="0 0 256 256"><path d="M149.66,122.34a8,8,0,0,1,0,11.32l-80,80a8,8,0,0,1-11.32-11.32L132.69,128,58.34,53.66A8,8,0,0,1,69.66,42.34ZM184,40a8,8,0,0,0-8,8V208a8,8,0,0,0,16,0V48A8,8,0,0,0,184,40Z"></path></svg> 
+      </button>
+      <Link to="/">LuckySw</Link>
+    </section>
+    <Sidebar open={sidebarOpen} onClose={() => setSidebarOpen(false)}/>
+  </>;
 }
